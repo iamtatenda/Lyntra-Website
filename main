@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lyntra transforms businesses with stunning, high-converting websites. Get seen, get clients.">
+    <meta name="keywords" content="web design, website development, digital presence, conversion optimization">
+    <meta name="author" content="Lyntra">
+    <meta property="og:title" content="Lyntra | Web Design That Converts">
+    <meta property="og:description" content="Premium web design services to amplify your digital presence">
+    <meta property="og:type" content="website">
+    <title>Lyntra | Web Design That Converts</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        lyntra: {
+                            navy: '#0A1D34',
+                            cyan: '#00AEEF',
+                            pop: '#FFD700',
+                            teal: '#0089B2',
+                            sky: '#A4D8F4'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .gradient-text {
+            background: linear-gradient(90deg, #00AEEF 0%, #0089B2 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #0A1D34 0%, #0089B2 100%);
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        #vanta-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800 bg-white">
+    <!-- Navigation -->
+    <nav class="bg-lyntra-navy text-white sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                    <a href="index.html" class="flex items-center space-x-2">
+                        <img src="https://huggingface.co/spaces/Iamtatzy/lyntra-web-alchemy/resolve/main/images/Lyntralogo-min.png" alt="Lyntra Logo" class="h-8">
+                        <span class="text-xl font-bold">Lyntra</span>
+                    </a>
+<div class="hidden md:flex space-x-8">
+                    <a href="services.html" class="hover:text-lyntra-cyan transition">Services</a>
+                    <a href="portfolio.html" class="hover:text-lyntra-cyan transition">Portfolio</a>
+                    <a href="process.html" class="hover:text-lyntra-cyan transition">Process</a>
+                    <a href="testimonials.html" class="hover:text-lyntra-cyan transition">Testimonials</a>
+                    <a href="contact.html" class="hover:text-lyntra-cyan transition">Contact</a>
+                </div>
+<button class="md:hidden focus:outline-none">
+                    <i data-feather="menu"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative hero-gradient text-white overflow-hidden">
+        <div id="vanta-bg"></div>
+        <div class="container mx-auto px-6 py-24 relative z-10">
+            <div class="max-w-3xl">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">Transform Your Business With <span class="gradient-text">Digital Alchemy</span></h1>
+                <p class="text-xl md:text-2xl mb-8 opacity-90">We craft websites that don't just look good - they convert visitors into loyal customers.</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#contact" class="bg-lyntra-pop text-lyntra-navy px-8 py-4 rounded-full font-bold hover:bg-yellow-400 transition text-center">Get Your Free Quote</a>
+                    <a href="#portfolio" class="border-2 border-white px-8 py-4 rounded-full font-bold hover:bg-white hover:text-lyntra-navy transition text-center">See Our Work</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .card.sweeperCard {
+            transition: all 0.3s ease;
+        }
+        .card.sweeperCard:hover {
+            background-color: #f8fafc;
+            box-shadow: 0 20px 25px -5px rgba(0, 174, 239, 0.1), 0 10px 10px -5px rgba(0, 174, 239, 0.04);
+        }
+        .card.sweeperCard:hover .icon svg path {
+            stroke: #0089B2;
+        }
+        .card.sweeperCard:hover .linkMore {
+            color: #0089B2;
+        }
+    </style>
+<!-- Stats Section -->
+    <section class="bg-gray-50 py-16">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="p-6">
+                    <div class="text-4xl font-bold text-lyntra-cyan mb-2">87%</div>
+                    <div class="text-gray-600">Client Retention</div>
+                </div>
+                <div class="p-6">
+                    <div class="text-4xl font-bold text-lyntra-cyan mb-2">200+</div>
+                    <div class="text-gray-600">Projects Completed</div>
+                </div>
+                <div class="p-6">
+                    <div class="text-4xl font-bold text-lyntra-cyan mb-2">3.2x</div>
+                    <div class="text-gray-600">Avg. Conversion Lift</div>
+                </div>
+                <div class="p-6">
+                    <div class="text-4xl font-bold text-lyntra-cyan mb-2">24h</div>
+                    <div class="text-gray-600">Avg. Response Time</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Our <span class="gradient-text">Web Alchemy</span> Services</h2>
+                <p class="max-w-2xl mx-auto text-gray-600">We blend design, technology, and psychology to create digital experiences that convert.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="card sweeperCard bg-white rounded-xl p-8 shadow-lg card-hover border border-gray-100">
+                    <div class="containers">
+                        <div class="icon">
+                            <svg width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23.7222 9.04435V6.71102C23.7222 5.42235 22.6775 4.37769 21.3888 4.37769L6.61106 4.37769C5.32239 4.37769 4.27773 5.42235 4.27773 6.71102V9.04435C4.27773 10.333 5.32239 11.3777 6.61106 11.3777H21.3888C22.6775 11.3777 23.7222 10.333 23.7222 9.04435Z" stroke="#00AEEF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M23.7222 21.4888V19.1555C23.7222 17.8668 22.6775 16.8221 21.3888 16.8221H15.9444C14.6557 16.8221 13.6111 17.8668 13.6111 19.1555V21.4888C13.6111 22.7775 14.6557 23.8221 15.9444 23.8221H21.3888C22.6775 23.8221 23.7222 22.7775 23.7222 21.4888Z" stroke="#00AEEF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </div>
+                        <div class="title text-xl font-bold mb-3">Conversion-Focused Design</div>
+                        <div class="subtitle text-gray-600 mb-4">Every pixel is strategically placed to guide visitors toward your goals.</div>
+                        <ul class="space-y-2 text-lyntra-teal">
+                            <li class="flex items-center"><i data-feather="check" class="w-4 h-4 mr-2"></i> UX/UI Design</li>
+                            <li class="flex items-center"><i data-feather="check" class="w-4 h-4 mr-2"></i> Responsive Layouts</li>
+                            <li class="flex items-center"><i data-feather="check" class="w-4 h-4 mr-2"></i> A/B Testing</li>
+                        </ul>
+                        <div class="linkMore text-lyntra-cyan font-medium mt-4 flex items-center hover:text-lyntra-teal transition">
+                            Learn More
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 19" height="19" width="18" class="ml-1">
+                                <path stroke="#00AEEF" fill="#00AEEF" d="M3 9.09985C3 9.23792 2.88807 9.34985 2.75 9.34985C2.61193 9.34985 2.5 9.23792 2.5 9.09985C2.5 8.96178 2.61193 8.84985 2.75 8.84985C2.88807 8.84985 3 8.96178 3 9.09985Z"></path>
+                                <path stroke="#00AEEF" fill="#00AEEF" d="M9.25 2.84985C9.25 2.98792 9.13807 3.09985 9 3.09985C8.86193 3.09985 8.75 2.98792 8.75 2.84985C8.75 2.71178 8.86193 2.59985 9 2.59985C9.13807 2.59985 9.25 2.71178 9.25 2.84985Z"></path>
+                                <path fill="#00AEEF" d="M2.75 3.59985C3.16421 3.59985 3.5 3.26407 3.5 2.84985C3.5 2.43564 3.16421 2.09985 2.75 2.09985C2.33579 2.09985 2 2.43564 2 2.84985C2 3.26407 2.33579 3.59985 2.75 3.59985Z"></path>
+                                <path fill="#00AEEF" d="M2.75 6.72485C3.16421 6.72485 3.5 6.38907 3.5 5.97485C3.5 5.56064 3.16421 5.22485 2.75 5.22485C2.33579 5.22485 2 5.56064 2 5.97485C2 6.38907 2.33579 6.72485 2.75 6.72485Z"></path>
+                                <path fill="#00AEEF" d="M2.75 12.9749C3.16421 12.9749 3.5 12.6391 3.5 12.2249C3.5 11.8106 3.16421 11.4749 2.75 11.4749C2.33579 11.4749 2 11.8106 2 12.2249C2 12.6391 2.33579 12.9749 2.75 12.9749Z"></path>
+                                <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="#00AEEF" d="M9.25 15.3499V9.34985H15.25"></path>
+                                <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="#00AEEF" d="M9.25 9.34985L15.25 15.3499"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="card sweeperCard bg-white rounded-xl p-8 shadow-lg card-hover border border-gray-100">
+                    <div class="containers">
+                        <div class="icon">
+                            <svg width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23.7222 9.04435V6.71102C23.7222 5.42235 22.6775 4.37769 21.3888 4.37769L6.61106 4.37769C5.32239 4.37769 4.27773 5.42235 4.27773 6.71102V9.04435C4.27773 10.333 5.32239 11.3777 6.61106 11.3777H21.3888C22.6775 11.3777 23.7222 10.333 23.7222 9.04435Z" stroke="#00AEEF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M23.7222 21.4888V19.1555C23.7222 17.8668 22.6775 16.8221 21.3888 16.8221H15.9444C14.6557 16.8221 13.6111 17.8668 13.6111 19.1555V21.4888C13.6111 22.7775 14.6557 23.8221 15.9444 23.8221H21.3888C22.6775 23.8221 23.7222 22.7775 23.7222 21.4888Z" stroke="#00AEEF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </div>
+                        <div class="title text-xl font-bold mb-3">Performance Optimization</div>
+                        <div class="subtitle text-gray-600 mb-4">Lightning-fast websites that rank higher and keep visitors engaged.</div>
+                        <ul class="space-y-2 text-lyntra-teal">
+                            <li class="flex items-center"><i data-feather="check" class="w-4 h-4 mr-2"></i> SEO Foundations</li>
+                            <li class="flex items-center"><i data-feather="check" class="w-4 h-4 mr-2"></i> Speed Optimization</li>
+                            <li class="flex items-center"><i data-feather="check" class="w-4 h-4 mr-2"></i> Technical SEO</li>
+                        </ul>
+                        <div class="linkMore text-lyntra-cyan font-medium mt-4 flex items-center hover:text-lyntra-teal transition">
+                            Learn More
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 19" height="19" width="18" class="ml-1">
+                                <path stroke="#00AEEF" fill="#00AEEF" d="M3 9.09985C3 9.23792 2.88807 9.34985 2.75 9.34985C2.61193 9.34985 2.5 9.23792 2.5 9.09985C2.5 8.96178 2.61193 8.84985 2.75 8.84985C2.88807 8.84985 3 8.96178 3 9.09985Z"></path>
+                                <path stroke="#00AEEF" fill="#00AEEF" d="M9.25 2.84985C9.25 2.98792 9.13807 3.09985 9 3.09985C8.86193 3.09985 8.75 2.98792 8.75 2.84985C8.75 2.71178 8.86193 2.59985 9 2.59985C9.13807 2.59985 9.25 2.71178 9.25 2.84985Z"></path>
+                                <path fill="#00AEEF" d="M2.75 3.59985C3.16421 3.59985 3.5 3.26407 3.5 2.84985C3.5 2.43564 3.16421 2.09985 2.75 2.09985C2.33579 2.09985 2 2.43564 2 2.84985C2 3.26407 2.33579 3.59985 2.75 3.59985Z"></path>
+                                <path fill="#00AEEF" d="M2.75 6.72485C3.16421 6.72485 3.5 6.38907 3.5 5.97485C3.5 5.56064 3.16421 5.22485 2.75 5.22485C2.33579 5.22485 2 5.56064 2 5.97485C2 6.38907 2.33579 6.72485 2.75 6.72485Z"></path>
+                                <path fill="#00AEEF" d="M2.75 12.9749C3.16421 12.9749 3.5 12.6391 3.5 12.2249C3.5 11.8106 3.16421 11.4749 2.75 11.4749C2.33579 11.4749 2 11.8106 2 12.2249C2 12.6391 2.33579 12.9749 2.75 12.9749Z"></path>
+                                <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="#00AEEF" d="M9.25 15.3499V9.34985H15.25"></path>
+                                <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="#00AEEF" d="M9.25 9.34985L15.25 15.3499"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="card sweeperCard bg-white rounded-xl p-8 shadow-lg card-hover border border-gray-100">
+                    <div class="containers">
+                        <div class="icon">
+                            <svg width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23.7222 9.04435V6.71102C23.7222 5.42235 22.6775 4.37769 21.3888 4.37769L6.61106 4.37769C5.32239 4.37769 4.27773 5.42235 4.27773 6.71102V9.04435C4.27773 10.333 5.32239 11.3777 6.61106 11.3777H21.3888C22.6775 11.3777 23.7222 10.333 23.7222 9.04435Z" stroke="#00AEEF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M23.7222 21.4888V19.1555C23.7222 17.8668 22.6775 16.8221 21.3888 16.8221H15.9444C14.6557 16.8221 13.6111 17.8668 13.6111 19.1555V21.4888C13.6111 22.7775 14.6557 23.8221 15.9444 23.8221H21.3888C22.6775 23.8221 23.7222 22.7775 23.7222 21.4888Z" stroke="#00AEEF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </div>
+                        <div class="title text-xl font-bold mb-3">Ongoing Growth</div>
+                        <div class="subtitle text-gray-600 mb-4">We don't just build websites - we grow your digital presence.</div>
+                        <ul class="space-y-2 text-lyntra-teal">
+                            <li class="flex items-center"><i data-feather="check" class="w-4 h-4 mr-2"></i> Analytics Setup</li>
+                            <li class="flex items-center"><i data-feather="check" class="w-4 h-4 mr-2"></i> Content Strategy</li>
+                            <li class="flex items-center"><i data-feather="check" class="w-4 h-4 mr-2"></i> Monthly Reports</li>
+                        </ul>
+                        <div class="linkMore text-lyntra-cyan font-medium mt-4 flex items-center hover:text-lyntra-teal transition">
+                            Learn More
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 19" height="19" width="18" class="ml-1">
+                                <path stroke="#00AEEF" fill="#00AEEF" d="M3 9.09985C3 9.23792 2.88807 9.34985 2.75 9.34985C2.61193 9.34985 2.5 9.23792 2.5 9.09985C2.5 8.96178 2.61193 8.84985 2.75 8.84985C2.88807 8.84985 3 8.96178 3 9.09985Z"></path>
+                                <path stroke="#00AEEF" fill="#00AEEF" d="M9.25 2.84985C9.25 2.98792 9.13807 3.09985 9 3.09985C8.86193 3.09985 8.75 2.98792 8.75 2.84985C8.75 2.71178 8.86193 2.59985 9 2.59985C9.13807 2.59985 9.25 2.71178 9.25 2.84985Z"></path>
+                                <path fill="#00AEEF" d="M2.75 3.59985C3.16421 3.59985 3.5 3.26407 3.5 2.84985C3.5 2.43564 3.16421 2.09985 2.75 2.09985C2.33579 2.09985 2 2.43564 2 2.84985C2 3.26407 2.33579 3.59985 2.75 3.59985Z"></path>
+                                <path fill="#00AEEF" d="M2.75 6.72485C3.16421 6.72485 3.5 6.38907 3.5 5.97485C3.5 5.56064 3.16421 5.22485 2.75 5.22485C2.33579 5.22485 2 5.56064 2 5.97485C2 6.38907 2.33579 6.72485 2.75 6.72485Z"></path>
+                                <path fill="#00AEEF" d="M2.75 12.9749C3.16421 12.9749 3.5 12.6391 3.5 12.2249C3.5 11.8106 3.16421 11.4749 2.75 11.4749C2.33579 11.4749 2 11.8106 2 12.2249C2 12.6391 2.33579 12.9749 2.75 12.9749Z"></path>
+                                <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="#00AEEF" d="M9.25 15.3499V9.34985H15.25"></path>
+                                <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="#00AEEF" d="M9.25 9.34985L15.25 15.3499"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+</div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Our <span class="gradient-text">Digital Masterpieces</span></h2>
+                <p class="max-w-2xl mx-auto text-gray-600">See how we've transformed businesses with our web alchemy.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Portfolio Item 1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover">
+                    <img src="http://static.photos/technology/640x360/1" alt="Tech Startup Website" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Nexus Tech Solutions</h3>
+                        <p class="text-gray-600 mb-4">Increased conversions by 210% with a complete redesign.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lyntra-cyan font-medium">View Case Study →</span>
+                            <span class="text-lyntra-pop font-bold">+210%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover">
+                    <img src="http://static.photos/wellness/640x360/2" alt="Wellness Center Website" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Serenity Wellness</h3>
+                        <p class="text-gray-600 mb-4">Bookings increased by 175% in first 3 months.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lyntra-cyan font-medium">View Case Study →</span>
+                            <span class="text-lyntra-pop font-bold">+175%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 3 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover">
+                    <img src="http://static.photos/retail/640x360/3" alt="E-commerce Website" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Urban Threads</h3>
+                        <p class="text-gray-600 mb-4">Average order value increased by 63% post-launch.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lyntra-cyan font-medium">View Case Study →</span>
+                            <span class="text-lyntra-pop font-bold">+63%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block border-2 border-lyntra-cyan text-lyntra-cyan px-8 py-3 rounded-full font-bold hover:bg-lyntra-cyan hover:text-white transition">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Our <span class="gradient-text">Alchemical Process</span></h2>
+                <p class="max-w-2xl mx-auto text-gray-600">Transforming your vision into digital gold through a proven methodology.</p>
+            </div>
+            <div class="relative">
+                <!-- Timeline -->
+                <div class="hidden md:block absolute left-1/2 h-full w-1 bg-lyntra-sky transform -translate-x-1/2"></div>
+                
+                <!-- Process Steps -->
+                <div class="space-y-12 md:space-y-0">
+                    <!-- Step 1 -->
+                    <div class="relative md:flex justify-between items-center">
+                        <div class="md:w-5/12 mb-8 md:mb-0 text-right pr-8">
+                            <h3 class="text-2xl font-bold mb-2">Discovery</h3>
+                            <p class="text-gray-600">We dive deep into your business goals, audience, and competition to craft the perfect strategy.</p>
+                        </div>
+                        <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-12 h-12 bg-lyntra-cyan rounded-full flex items-center justify-center text-white font-bold border-4 border-white shadow-lg">1</div>
+                        <div class="md:w-5/12"></div>
+                    </div>
+                    
+                    <!-- Step 2 -->
+                    <div class="relative md:flex justify-between items-center">
+                        <div class="md:w-5/12"></div>
+                        <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-12 h-12 bg-lyntra-cyan rounded-full flex items-center justify-center text-white font-bold border-4 border-white shadow-lg">2</div>
+                        <div class="md:w-5/12 mb-8 md:mb-0 pl-8">
+                            <h3 class="text-2xl font-bold mb-2">Design</h3>
+                            <p class="text-gray-600">Our conversion-focused designs blend aesthetics with psychology to guide users toward action.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 3 -->
+                    <div class="relative md:flex justify-between items-center">
+                        <div class="md:w-5/12 mb-8 md:mb-0 text-right pr-8">
+                            <h3 class="text-2xl font-bold mb-2">Development</h3>
+                            <p class="text-gray-600">We build fast, secure, and scalable websites with clean code and SEO foundations.</p>
+                        </div>
+                        <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-12 h-12 bg-lyntra-cyan rounded-full flex items-center justify-center text-white font-bold border-4 border-white shadow-lg">3</div>
+                        <div class="md:w-5/12"></div>
+                    </div>
+                    
+                    <!-- Step 4 -->
+                    <div class="relative md:flex justify-between items-center">
+                        <div class="md:w-5/12"></div>
+                        <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-12 h-12 bg-lyntra-cyan rounded-full flex items-center justify-center text-white font-bold border-4 border-white shadow-lg">4</div>
+                        <div class="md:w-5/12 mb-8 md:mb-0 pl-8">
+                            <h3 class="text-2xl font-bold mb-2">Launch & Grow</h3>
+                            <p class="text-gray-600">We don't just launch - we monitor, optimize, and help your digital presence grow.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-lyntra-navy text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Client <span class="gradient-text">Success Stories</span></h2>
+                <p class="max-w-2xl mx-auto opacity-90">Don't just take our word for it - hear from businesses we've transformed.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white bg-opacity-10 rounded-xl p-8 backdrop-filter backdrop-blur-sm">
+                    <div class="flex items-center mb-6">
+                        <img src="http://static.photos/people/200x200/1" alt="Sarah Johnson" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Sarah Johnson</h4>
+                            <p class="text-lyntra-sky">CEO, Nexus Tech</p>
+                        </div>
+                    </div>
+                    <p class="mb-6 italic">"Lyntra completely transformed our online presence. Our lead generation increased by 210% within the first month of launching our new site."</p>
+                    <div class="flex">
+                        <i data-feather="star" class="text-lyntra-pop w-5 h-5 mr-1"></i>
+                        <i data-feather="star" class="text-lyntra-pop w-5 h-5 mr-1"></i>
+                        <i data-feather="star" class="text-lyntra-pop w-5 h-5 mr-1"></i>
+                        <i data-feather="star" class="text-lyntra-pop w-5 h-5 mr-1"></i>
+                        <i data-feather="star" class="text-lyntra-pop w-5 h-5"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white bg-opacity-10 rounded-xl p-8 backdrop-filter backdrop-blur-sm">
+                    <div class="flex items-center mb-6">
+                        <img src="http://static.photos/people/200x200/2" alt="Michael Chen" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Michael Chen</h4>
+                            <p class="text-lyntra-sky">Founder, Urban Threads</p>
+                        </div>
+                    </div>
+                    <p class="mb-6 italic">"The attention to detail in our e-commerce site was incredible. Our conversion rate tripled, and the site just feels premium now."</p>
+                    <div class="flex">
+                        <i data-feather="star" class="text-lyntra-pop w-5 h-5 mr-1"></i>
+                        <i data-feather="star" class="text-lyntra-pop w-5 h-5 mr-1"></i>
+                        <i data-feather="star" class="text-lyntra-pop w-5 h-5 mr-1"></i>
+                        <i data-feather="star" class="text-lyntra-pop w-5 h-5 mr-1"></i>
+                        <i data-feather="star" class="text-lyntra-pop w-5 h-5"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white bg-opacity-10 rounded-xl p-8 backdrop-filter backdrop-blur-sm">
+                    <div class="flex items-center mb-6">
+                        <img src="http://static.photos/people/200x200/3" alt="Emma Rodriguez" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Emma Rodriguez</h4>
+                            <p class="text-lyntra-sky">Director, Serenity Wellness</p>
+                        </div>
+                    </div>
+                    <p class="mb-6 italic">"From the first consultation to ongoing support, working with Lyntra has been seamless. Our bookings have never been higher."</p>
+                    <div class="flex">
+                        <i data-feather="star" class="text-lyntra-pop w-5 h-5 mr-1"></i>
+                        <i data-feather="star" class="text-lyntra-pop w-5 h-5 mr-1"></i>
+                        <i data-feather="star" class="text-lyntra-pop w-5 h-5 mr-1"></i>
+                        <i data-feather="star" class="text-lyntra-pop w-5 h-5 mr-1"></i>
+                        <i data-feather="star" class="text-lyntra-pop w-5 h-5"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-lyntra-cyan to-lyntra-teal text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your Digital Presence?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto opacity-90">Let's discuss how we can help your business stand out and convert more visitors into customers.</p>
+            <a href="#contact" class="inline-block bg-lyntra-pop text-lyntra-navy px-10 py-4 rounded-full font-bold hover:bg-yellow-400 transition shadow-lg">Get Your Free Strategy Session</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Let's <span class="gradient-text">Connect</span></h2>
+                    <p class="text-gray-600 mb-8">Have a project in mind or questions about our services? Drop us a message and we'll get back to you within 24 hours.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i data-feather="mail" class="text-lyntra-cyan mr-4"></i>
+                            <span>hello@lyntra.design</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i data-feather="phone" class="text-lyntra-cyan mr-4"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i data-feather="map-pin" class="text-lyntra-cyan mr-4"></i>
+                            <span>Digital Studio - Available Worldwide</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 rounded-xl p-8 shadow-lg">
+                    <form>
+                        <div class="mb-6">
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Your Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-lyntra-cyan focus:outline-none focus:ring-2 focus:ring-lyntra-sky">
+                        </div>
+                        <div class="mb-6">
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-lyntra-cyan focus:outline-none focus:ring-2 focus:ring-lyntra-sky">
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Your Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-lyntra-cyan focus:outline-none focus:ring-2 focus:ring-lyntra-sky"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-lyntra-cyan text-white px-6 py-4 rounded-lg font-bold hover:bg-lyntra-teal transition">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-lyntra-navy text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <img src="https://huggingface.co/spaces/Iamtatzy/lyntra-web-alchemy/resolve/main/images/Lyntralogo-min.png" alt="Lyntra Logo" class="h-8">
+                        <span class="text-xl font-bold">Lyntra</span>
+                    </div>
+<p class="text-lyntra-sky mb-4">Web design that converts visitors into customers.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://x.com/Lyntrastud66598" class="text-lyntra-sky hover:text-white transition"><i data-feather="twitter"></i></a>
+                        <a href="https://www.instagram.com/studiolyntra" class="text-lyntra-sky hover:text-white transition"><i data-feather="instagram"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61582093194385&sk=about" class="text-lyntra-sky hover:text-white transition"><i data-feather="facebook"></i></a>
+</div>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-lyntra-sky hover:text-white transition">Web Design</a></li>
+                        <li><a href="#" class="text-lyntra-sky hover:text-white transition">E-commerce</a></li>
+                        <li><a href="#" class="text-lyntra-sky hover:text-white transition">SEO Optimization</a></li>
+                        <li><a href="#" class="text-lyntra-sky hover:text-white transition">Branding</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-lyntra-sky hover:text-white transition">About</a></li>
+                        <li><a href="#" class="text-lyntra-sky hover:text-white transition">Portfolio</a></li>
+                        <li><a href="#" class="text-lyntra-sky hover:text-white transition">Process</a></li>
+                        <li><a href="#" class="text-lyntra-sky hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-lyntra-sky hover:text-white transition">Blog</a></li>
+                        <li><a href="#" class="text-lyntra-sky hover:text-white transition">Case Studies</a></li>
+                        <li><a href="#" class="text-lyntra-sky hover:text-white transition">Web Design Guide</a></li>
+                        <li><a href="#" class="text-lyntra-sky hover:text-white transition">Free Tools</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-lyntra-teal border-opacity-20 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-lyntra-sky mb-4 md:mb-0">© 2023 Lyntra. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-lyntra-sky hover:text-white transition">Privacy Policy</a>
+                    <a href="#" class="text-lyntra-sky hover:text-white transition">Terms of Service</a>
+                    <a href="#" class="text-lyntra-sky hover:text-white transition">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Vanta.js globe
+        VANTA.GLOBE({
+            el: "#vanta-bg",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x00aeef,
+            backgroundColor: 0x0a1d34,
+            size: 0.8
+        });
+
+        // Initialize feather icons
+        feather.replace();
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
